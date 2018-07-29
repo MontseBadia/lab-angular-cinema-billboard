@@ -1,0 +1,59 @@
+<div class="movie-title">
+  <p>Room {{movie.room}}</p>
+  <h1>{{movie.title}}</h1>
+</div>
+
+<div class="main-content">
+
+  <section>
+    <img src="{{movie.poster}}" alt="" width="350" height="500">
+  </section>
+
+  <section class="content">
+
+    <div class="movie-info">
+      <p>Genres:</p>
+      <div>
+        <ul>
+          <li *ngFor="let genre of movie.genres">{{genre}}</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="movie-info">
+      <p>Year:</p>
+      <p class="p-margin">{{movie.year}}</p>
+    </div>
+
+    <div class="movie-info">
+      <p>Director:</p>
+      <p class="p-margin-2">{{movie.director}}</p>
+    </div>
+
+    <div class="movie-info">
+      <p>Actors:</p>
+      <div>
+        <ul>
+          <li *ngFor="let actor of movie.actors">{{actor}}</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="movie-info">
+      <p>Hours:</p>
+      <div>
+        <ul>
+          <li *ngFor="let hour of movie.hours">{{hour}}</li>
+        </ul>
+      </div>
+    </div>
+
+    <p>Synopsis:</p>
+    <p> {{movie.synopsis}}</p>
+
+    <div class="btn">
+      <a [routerLink]="['/home']">Home</a>
+    </div>
+  </section>
+
+</div>

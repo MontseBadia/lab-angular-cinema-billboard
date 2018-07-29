@@ -1,0 +1,53 @@
+.movie-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.movie-title p {
+    margin-right: 5vw;
+    text-transform: uppercase;
+}
+
+.movie-info {
+    display: flex;
+}
+
+.movie-info ul {
+    list-style: none;
+}
+
+.p-margin {
+    margin-left: 65px;
+}
+
+.p-margin-2 {
+    margin-left: 40px;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+}
+
+section.content {
+    width: 30%;
+    margin-left: 5%;
+}
+
+p, ul {
+    margin: 10px
+}
+
+a {
+    border: 1px solid grey;
+    border-radius: 10px;
+    background-color: rgb(37, 37, 116);
+    color: white;
+    padding: 10px 50px;
+    text-decoration: none;
+}
+
+.btn {
+    margin: 40px;
+}
